@@ -1,7 +1,5 @@
 package kodlamaio.northwind.entities.concretes;
 
-/*NOT NEDEN LOMBOK, DATA KULLANMADIGIMI MERAK EDERSENİZ EGİTİMCİ ARKADAS OYLE  YAPTIGI İCİN TEK TEK
-EKLEDİM CONSTRUCTOR VE GETTER SETTERLERİ VE DEPENDENCİES KISMINDA LOMBOK YOK EKLEMEDİM*/
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -35,5 +33,6 @@ public class Product {
     @ManyToOne()
     @JoinColumn(name = "category_id")
     private Category category;
+
 
 }
